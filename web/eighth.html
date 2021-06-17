@@ -1,0 +1,62 @@
+<!--Text filed, password field-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表单form</title>
+</head>
+<body>
+	<form action="">
+		First name: <input type="text" name="first name"><br />
+		Last name: <input type="text" name="last name">
+	</form>
+	<p><b>注意：</b>表单本身是不可见的。且一个文本字段的默认宽度是20个字符</p>
+
+	<form>
+		Username: <input type="text" name="user"><br />
+		Password: <input type="password" name="password">
+	</form>
+	<p><b>注意:</b>密码字段中的字符是隐藏的</p>
+
+	<p>这是单选框</p>
+	<form>
+		<input type="radio" name="sex" value="male">Male<br />
+		<input type="radio" name="sex" value="female">Female
+	</form>
+
+	<p>这是复选框</p>
+	<form>
+		<input type="checkbox" name="vehicle" value="bike">I have a bike<br />
+		<input type="checkbox" name="vehicle" value="car">I have a car
+	</form>
+	<p>这是提交按钮</p>
+	<form name="input" action="html_form_action.php" method="get">
+		Username: <input type="text" name="user">
+		<input type="submit" value="Submit">
+	</form>
+
+	<h4>这是下拉列表</h4>
+	<form action="">
+		<select name="cars">
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fiat">Fiat</option>
+			<option value="audi">Audi</option>
+		</select>
+	</form>
+
+	<h4>这是预选下拉列表</h4>
+	<form action="">
+		<select name="cars">
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fiat" selected>Fiat</option>
+			<option value="audi">Audi</option>
+		</select>
+	</form>
+
+	<textarea rows="10" cols="30">我是一个文本框</textarea>
+	<br />
+	<input type="button" value="Hello world!">
+</body>
+</html>
